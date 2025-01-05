@@ -1,4 +1,5 @@
-import { Stack, useNavigation, useRouter } from 'expo-router';
+import { Stack, useNavigation } from 'expo-router';
+import { Platform } from 'react-native';
 import { View, Text } from 'react-native';
 import { Text as TextPrimitive } from '~/components/ui/text';
 import React from 'react';
@@ -24,10 +25,14 @@ export default function NotFoundScreen() {
         translateY.value = 0;
     }, []);
 
-    const navigation = useRouter();
+    const navigation = useNavigation();
 
     const goBack = () => {
-        navigation.back();
+        if (Platform.OS === 'web') {
+            window.history.back();
+            return;
+        }
+        navigation.goBack();
     }
 
     return (

@@ -54,7 +54,7 @@ export default function RootLayout() {
             <ThemeProvider value={isDarkColorScheme ? DARK_THEME : LIGHT_THEME}>
                 <StatusBar style={isDarkColorScheme ? 'light' : 'dark'} />
                 <Stack screenOptions={{
-                    animation: 'none',
+                    animation: 'flip',
                 }}
                 >
                     <Stack.Screen
