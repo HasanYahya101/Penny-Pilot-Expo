@@ -15,6 +15,7 @@ import {
 import { Progress } from '~/components/ui/progress';
 import { Text } from '~/components/ui/text';
 import { Tooltip, TooltipContent, TooltipTrigger } from '~/components/ui/tooltip';
+import { Link } from 'expo-router';
 
 const GITHUB_AVATAR_URI =
   'https://i.pinimg.com/originals/ef/a2/8d/efa28d18a04e7fa40ed49eeb0ab660db.jpg';
@@ -81,13 +82,13 @@ export default function Screen() {
           </View>
           <Progress value={progress} className='h-2' indicatorClassName='bg-sky-600' />
           <View />
-          <Button
+          <Link
             variant='outline'
-            className='shadow shadow-foreground/5'
-            onPress={updateProgressValue}
+            // on press go to /app/updates/
+            href='./app/updates/'
           >
             <Text>Update</Text>
-          </Button>
+          </Link>
         </CardFooter>
       </Card>
     </View>
