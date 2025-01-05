@@ -1,5 +1,5 @@
 {
-  "name": "@rnr/starter-base",
+  "name": "penny-pilot",
   "main": "index.js",
   "version": "1.0.0",
   "scripts": {
@@ -20,6 +20,7 @@
     "@rn-primitives/slot": "~1.1.0",
     "@rn-primitives/tooltip": "~1.1.0",
     "@rn-primitives/types": "~1.1.0",
+    "@rnr/starter-base": "file:",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "expo": "^52.0.23",
@@ -31,6 +32,7 @@
     "expo-system-ui": "~4.0.6",
     "lucide-react-native": "^0.378.0",
     "nativewind": "^4.1.23",
+    "penny-pilot": "file:",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-native": "0.76.5",
