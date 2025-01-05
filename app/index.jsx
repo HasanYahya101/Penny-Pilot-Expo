@@ -1,7 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import { useEffect } from 'react';
 
 const Index = () => {
+    useEffect(() => {
+        document.title = 'Test';
+    }, []);
+
     return (
         <View style={styles.container}>
             <Text style={styles.text}>Hello, this is a test screen!</Text>
