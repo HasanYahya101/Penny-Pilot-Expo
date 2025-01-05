@@ -1,4 +1,4 @@
-import { Stack, useNavigation } from 'expo-router';
+import { Stack, useNavigation, useRouter } from 'expo-router';
 import { View, Text } from 'react-native';
 import { Text as TextPrimitive } from '~/components/ui/text';
 import React from 'react';
@@ -24,11 +24,20 @@ export default function NotFoundScreen() {
         translateY.value = 0;
     }, []);
 
-    const navigation = useNavigation();
+    const navigation = useRouter();
+
+    const goBack = () => {
+        navigation.back();
+    }
 
     return (
         <>
-            <Stack.Screen options={{ title: 'Oops!' }} />
+            <Stack.Screen options={{
+                title: 'Oops!', headerTitleStyle: {
+                    //fontSize: 18,
+                    //fontWeight: 'bold',
+                },
+            }} />
             <View className="flex-1 dark:bg-black bg-white justify-center items-center px-4">
                 <View className="w-full max-w-md">
                     <Animated.View style={fadeInStyle} className="items-center">
@@ -42,7 +51,7 @@ export default function NotFoundScreen() {
                         </Text>
                     </Animated.View>
                     <Animated.View style={fadeInStyle} className="space-y-4">
-                        <Button onPress={() => navigation.goBack()} className="mt-12 w-[80vw] max-w-[18rem] self-center bg-black dark:bg-white">
+                        <Button onPress={() => goBack()} className="mt-12 w-[80vw] max-w-[18rem] self-center bg-black dark:bg-white">
 
                             <TextPrimitive className='font-bold text-white dark:text-black'>
                                 Back
