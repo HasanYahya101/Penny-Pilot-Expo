@@ -24,26 +24,30 @@ import { EyeOff } from '~/lib/icons/EyeOff';
 import { Bell } from '~/lib/icons/bell';
 import { Menu } from '~/lib/icons/menu';
 import { useState } from 'react';
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Screen() {
     const [isBalanceHidden, setIsBalanceHidden] = useState(false);
 
     return (
         <>
-            <View className='flex-1 justify-start items-center bg-black'>
+            <SafeAreaView className='flex-1 justify-start items-center bg-black'>
                 <ScrollView className='flex-1 w-full' contentContainerClassName='justify-start items-center'>
                     {/*<View className="absolute top-0 left-0 w-full h-64 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-b-[40px] z-0"></View>
                     <View className="absolute top-32 left-1/2 transform -translate-x-1/2 w-72 h-72 bg-indigo-300 rounded-full filter blur-3xl opacity-20 z-0"></View>*/}
 
-                    <View className=''>
+                    <View className='mt-4 w-[86vw] aspect-[5/3] bg-white rounded-3xl shadow-xl' //  transition-colors duration-300 ease-in-out
+                    >
+                        <View className='p-20 w-full h-full'>
+                            <Text className='text-2xl font-bold text-center text-black'>
+                                Total Balance
+                            </Text>
+                        </View>
 
                     </View>
 
-
-
-
                 </ScrollView>
-            </View>
+            </SafeAreaView>
         </>
     );
 }

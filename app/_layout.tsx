@@ -64,6 +64,7 @@ export default function RootLayout() {
                             // headerRight: () => <ThemeToggle />,
                             headerShadowVisible: false,
                             //headerBackTitleVisible: false,
+                            headerShown: false,
                         }}
                     />
                 </Stack>
