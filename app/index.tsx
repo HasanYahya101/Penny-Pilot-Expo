@@ -32,8 +32,12 @@ export default function Screen() {
         <>
             <View className='flex-1 justify-start items-center bg-black'>
                 <ScrollView className='flex-1 w-full' contentContainerClassName='justify-start items-center'>
-                    <View className="absolute top-0 left-0 w-full h-64 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-b-[40px] z-0"></View>
-                    <View className="absolute top-32 left-1/2 transform -translate-x-1/2 w-72 h-72 bg-indigo-300 rounded-full filter blur-3xl opacity-20 z-0"></View>
+                    {/*<View className="absolute top-0 left-0 w-full h-64 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-b-[40px] z-0"></View>
+                    <View className="absolute top-32 left-1/2 transform -translate-x-1/2 w-72 h-72 bg-indigo-300 rounded-full filter blur-3xl opacity-20 z-0"></View>*/}
+
+                    <View className=''>
+
+                    </View>
 
 
 
