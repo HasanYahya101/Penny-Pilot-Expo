@@ -27,6 +27,8 @@ import { Search } from '~/lib/icons/search';
 import { useState } from 'react';
 import { SafeAreaView } from "react-native-safe-area-context";
 import { ChevronDown } from '~/lib/icons/Chevron-Down';
+import { ArrowDown } from '~/lib/icons/ArrowDown';
+import { ArrowUp } from '~/lib/icons/ArrowUp';
 
 export default function Screen() {
     const [isBalanceHidden, setIsBalanceHidden] = useState(false);
@@ -78,17 +80,17 @@ export default function Screen() {
                             <ChevronDown className='text-white mt-[0.2rem]' size={16} strokeWidth={2} />
                         </TouchableOpacity>
                         <TouchableOpacity>
-                            <Search className="text-white" size={20} strokeWidth={3} />
+                            <Search className="text-white" size={20} strokeWidth={2} />
                         </TouchableOpacity>
                     </View>
 
                     <View className="px-6">
 
                         <View className="flex gap-4 mb-4 flex-row">
-                            <View className="flex-1 bg-[#FF6B6B]/20 rounded-full px-4 py-3">
+                            <View className="flex-1 bg-[#FF6B6B]/30 rounded-full px-4 py-3">
                                 <View className="flex flex-row items-center gap-2">
                                     <View className="w-12 h-12 rounded-full bg-[#FF6B6B] flex items-center justify-center">
-                                        <ArrowDownCircle className="w-4 h-4 text-white" />
+                                        <ArrowDown className="w-4 h-4 text-white" />
                                     </View >
                                     <View >
                                         <Text className="text-sm text-gray-400">Spending</Text>
@@ -96,10 +98,10 @@ export default function Screen() {
                                     </View >
                                 </View >
                             </View >
-                            <View className="flex-1 bg-[#4CAF50]/20 rounded-full px-4 py-3">
+                            <View className="flex-1 bg-[#4CAF50]/30 rounded-full px-4 py-3">
                                 <View className="flex flex-row items-center gap-2">
                                     <View className="w-12 h-12 rounded-full bg-[#4CAF50] flex items-center justify-center">
-                                        <ArrowUpCircle className="w-4 h-4 text-white" />
+                                        <ArrowUp className="w-4 h-4 text-white" />
                                     </View >
                                     <View >
                                         <Text className="text-sm text-gray-400">Income</Text>
@@ -108,9 +110,11 @@ export default function Screen() {
                                 </View >
                             </View >
                         </View >
-                        <View className="inline-block px-4 py-2 rounded-full bg-gray-800">
-                            <Text className="text-sm">Balance: $8,979</Text>
-                        </View >
+                        <View className='flex px-auto items-center justify-center'>
+                            <View className="inline-block items-center justify-center px-4 py-2 rounded-full bg-gray-800 mx-auto">
+                                <Text className="text-sm truncate">Balance: $8,979</Text>
+                            </View>
+                        </View>
                     </View >
 
 
