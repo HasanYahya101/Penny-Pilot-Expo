@@ -46,14 +46,14 @@ export default function Screen() {
 
                     </View>*/}
 
-                    <View className="p-6 flex justify-between items-start">
-                        <View >
+                    <View className="p-6 flex flex-row justify-between items-start">
+                        <View className="flex flex-col">
                             <Text className="text-gray-400">Good Afternoon</Text>
                             <Text className="text-2xl font-semibold mt-1">Amit Mohan</Text>
                         </View >
                         <View className="flex items-center gap-4">
                             {/* <Search className="w-6 h-6 text-gray-400" /> */}
-                            <View className="w-10 h-10 rounded-full overflow-hidden">
+                            <View className="w-14 h-14 mt-1.5 rounded-full overflow-hidden">
                                 <Image
                                     src="https://fastly.picsum.photos/id/1079/200/200.jpg?hmac=1ufYwVqTHDtGZw0aD-rsTU5gv74qWxm5-k7xQYkSeig"
                                     alt="Profile"
