@@ -26,6 +26,7 @@ import { Menu } from '~/lib/icons/menu';
 import { Search } from '~/lib/icons/search';
 import { useState } from 'react';
 import { SafeAreaView } from "react-native-safe-area-context";
+import { ChevronDown } from '~/lib/icons/Chevron-Down';
 
 export default function Screen() {
     const [isBalanceHidden, setIsBalanceHidden] = useState(false);
@@ -52,7 +53,6 @@ export default function Screen() {
                             <Text className="text-2xl font-semibold mt-1 truncate">Amit Mohan</Text>
                         </View >
                         <View className="flex items-center gap-4">
-                            {/* <Search className="w-6 h-6 text-gray-400" /> */}
                             <TouchableOpacity className="w-16 h-16 mt-0 rounded-full overflow-hidden">
                                 <Avatar alt="Profile"
                                     className="w-16 h-16 mt-0 rounded-full overflow-hidden"
@@ -72,13 +72,22 @@ export default function Screen() {
                             </TouchableOpacity >
                         </View >
                     </View >
+                    <View className='mt-8 px-6 flex flex-row justify-between items-start'>
+                        <TouchableOpacity className='flex flex-row gap-1 rounded-lg'>
+                            <Text className="text-md truncate font-semibold mb-4">This month</Text>
+                            <ChevronDown className='text-white mt-[0.2rem]' size={16} strokeWidth={2} />
+                        </TouchableOpacity>
+                        <TouchableOpacity>
+                            <Search className="text-white" size={20} strokeWidth={3} />
+                        </TouchableOpacity>
+                    </View>
 
-                    <View className="px-6 mt-6">
-                        <Text className="text-xl mb-4">This month</Text>
-                        <View className="flex gap-4 mb-4">
+                    <View className="px-6">
+
+                        <View className="flex gap-4 mb-4 flex-row">
                             <View className="flex-1 bg-[#FF6B6B]/20 rounded-full px-4 py-3">
-                                <View className="flex items-center gap-2">
-                                    <View className="w-8 h-8 rounded-full bg-[#FF6B6B] flex items-center justify-center">
+                                <View className="flex flex-row items-center gap-2">
+                                    <View className="w-12 h-12 rounded-full bg-[#FF6B6B] flex items-center justify-center">
                                         <ArrowDownCircle className="w-4 h-4 text-white" />
                                     </View >
                                     <View >
@@ -88,8 +97,8 @@ export default function Screen() {
                                 </View >
                             </View >
                             <View className="flex-1 bg-[#4CAF50]/20 rounded-full px-4 py-3">
-                                <View className="flex items-center gap-2">
-                                    <View className="w-8 h-8 rounded-full bg-[#4CAF50] flex items-center justify-center">
+                                <View className="flex flex-row items-center gap-2">
+                                    <View className="w-12 h-12 rounded-full bg-[#4CAF50] flex items-center justify-center">
                                         <ArrowUpCircle className="w-4 h-4 text-white" />
                                     </View >
                                     <View >
