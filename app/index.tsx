@@ -54,14 +54,21 @@ export default function Screen() {
                         <View className="flex items-center gap-4">
                             {/* <Search className="w-6 h-6 text-gray-400" /> */}
                             <TouchableOpacity className="w-16 h-16 mt-0 rounded-full overflow-hidden">
-                                <Image
-                                    src="https://fastly.picsum.photos/id/1079/200/200.jpg?hmac=1ufYwVqTHDtGZw0aD-rsTU5gv74qWxm5-k7xQYkSeig"
-                                    alt="Profile"
-                                    width={40}
-                                    height={40}
-                                    className="w-full h-full object-cover"
-                                    style={{ resizeMode: 'cover' }}
-                                />
+                                <Avatar alt="Profile"
+                                    className="w-16 h-16 mt-0 rounded-full overflow-hidden"
+                                >
+                                    <AvatarImage
+                                        source={{ uri: "https://fastly.picsum.photos/id/1079/200/200.jpg?hmac=1ufYwVqTHDtGZw0aD-rsTU5gv74qWxm5-k7xQYkSeig" }}
+                                        width={40}
+                                        height={40}
+                                        className="w-full h-full object-cover"
+                                        style={{ resizeMode: 'cover' }}
+                                    />
+                                    <AvatarFallback className='w-16 h-16 mt-0 rounded-full overflow-hidden'>
+                                        <Text className="text-gray-200 text-xl">AM</Text>
+                                    </AvatarFallback>
+
+                                </Avatar>
                             </TouchableOpacity >
                         </View >
                     </View >
