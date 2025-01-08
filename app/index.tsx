@@ -60,6 +60,7 @@ export default function Screen() {
                                     width={40}
                                     height={40}
                                     className="w-full h-full object-cover"
+                                    style={{ resizeMode: 'cover' }}
                                 />
                             </TouchableOpacity >
                         </View >
