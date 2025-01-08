@@ -39,15 +39,16 @@ export default function Screen() {
             <SafeAreaView className='flex-1 justify-start items-center bg-black'>
                 <ScrollView className='flex-1 w-full' contentContainerClassName='justify-start'>
 
+
                     <View className="p-6 flex flex-row justify-between items-start mt-3">
                         <View className="flex flex-col">
-                            <Text className="text-gray-400 truncate">Good Afternoon</Text>
-                            <Text className="text-2xl font-semibold mt-1 truncate">Amit Mohan</Text>
+                            <Text className="text-gray-400 truncate text-lg">Good Afternoon</Text>
+                            <Text className="text-3xl font-semibold mt-1 truncate">Amit Mohan</Text>
                         </View >
                         <View className="flex items-center gap-4">
-                            <TouchableOpacity className="w-16 h-16 mt-0 rounded-full overflow-hidden">
+                            <TouchableOpacity className="w-[4.5rem] h-[4.5rem] mt-0 rounded-full overflow-hidden">
                                 <Avatar alt="Profile"
-                                    className="w-16 h-16 mt-0 rounded-full overflow-hidden"
+                                    className="w-[4.5rem] h-[4.5rem] mt-0 rounded-full overflow-hidden"
                                 >
                                     <AvatarImage
                                         source={{ uri: "https://fastly.picsum.photos/id/1079/200/200.jpg?hmac=1ufYwVqTHDtGZw0aD-rsTU5gv74qWxm5-k7xQYkSeig" }}
@@ -56,7 +57,7 @@ export default function Screen() {
                                         className="w-full h-full object-cover"
                                         style={{ resizeMode: 'cover' }}
                                     />
-                                    <AvatarFallback className='w-16 h-16 mt-0 rounded-full overflow-hidden'>
+                                    <AvatarFallback className='w-[4.5rem] h-[4.5rem] mt-0 rounded-full overflow-hidden'>
                                         <Text className="text-gray-200 text-xl">AM</Text>
                                     </AvatarFallback>
 
@@ -64,7 +65,7 @@ export default function Screen() {
                             </TouchableOpacity >
                         </View >
                     </View >
-                    <View className='mt-8 px-6 flex flex-row justify-between items-start'>
+                    <View className='mt-6 px-6 flex flex-row justify-between items-start'>
                         <TouchableOpacity className='flex flex-row gap-1 rounded-lg'>
                             <Text className="text-md truncate font-semibold mb-4">This month</Text>
                             <ChevronDown className='text-white mt-[0.2rem]' size={16} strokeWidth={2} />
@@ -74,7 +75,7 @@ export default function Screen() {
                         </TouchableOpacity>
                     </View>
 
-                    <View className="px-6">
+                    <View className="px-4">
 
                         <View className="flex gap-4 mb-4 flex-row">
                             <View className="flex-1 bg-[#FF6B6B]/30 rounded-full px-4 py-3">
@@ -83,8 +84,8 @@ export default function Screen() {
                                         <ArrowDown className="w-4 h-4 text-white" />
                                     </View >
                                     <View >
-                                        <Text className="text-sm text-gray-400 truncate">Spending</Text>
-                                        <Text className="text-lg font-semibold truncate">$1,021</Text>
+                                        <Text className="text-md text-gray-400 truncate">Spending</Text>
+                                        <Text className="text-xl font-semibold truncate">$1,021</Text>
                                     </View >
                                 </View >
                             </View >
@@ -94,15 +95,15 @@ export default function Screen() {
                                         <ArrowUp className="w-4 h-4 text-white" />
                                     </View >
                                     <View >
-                                        <Text className="text-sm text-gray-400 truncate">Income</Text>
-                                        <Text className="text-lg font-semibold truncate">$10,000</Text>
+                                        <Text className="text-md text-gray-400 truncate">Income</Text>
+                                        <Text className="text-xl font-semibold truncate">$10,000</Text>
                                     </View >
                                 </View >
                             </View >
                         </View >
-                        <View className='flex px-auto items-center justify-center mt-2'>
+                        <View className='flex px-auto items-center justify-center mt-2 px-2'>
                             <View className="inline-block items-center justify-center px-4 py-2 rounded-full bg-gray-800 mx-auto">
-                                <Text className="text-sm truncate">Balance: $8,979</Text>
+                                <Text className="text-md truncate">Balance: $8,979</Text>
                             </View>
                         </View>
                     </View >
