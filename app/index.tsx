@@ -46,14 +46,14 @@ export default function Screen() {
 
                     </View>*/}
 
-                    <View className="p-6 flex flex-row justify-between items-start">
+                    <View className="p-6 flex flex-row justify-between items-start mt-3">
                         <View className="flex flex-col">
-                            <Text className="text-gray-400">Good Afternoon</Text>
-                            <Text className="text-2xl font-semibold mt-1">Amit Mohan</Text>
+                            <Text className="text-gray-400 truncate">Good Afternoon</Text>
+                            <Text className="text-2xl font-semibold mt-1 truncate">Amit Mohan</Text>
                         </View >
                         <View className="flex items-center gap-4">
                             {/* <Search className="w-6 h-6 text-gray-400" /> */}
-                            <View className="w-14 h-14 mt-1.5 rounded-full overflow-hidden">
+                            <TouchableOpacity className="w-16 h-16 mt-0.5 rounded-full overflow-hidden">
                                 <Image
                                     src="https://fastly.picsum.photos/id/1079/200/200.jpg?hmac=1ufYwVqTHDtGZw0aD-rsTU5gv74qWxm5-k7xQYkSeig"
                                     alt="Profile"
@@ -61,7 +61,7 @@ export default function Screen() {
                                     height={40}
                                     className="w-full h-full object-cover"
                                 />
-                            </View >
+                            </TouchableOpacity >
                         </View >
                     </View >
 
@@ -99,7 +99,7 @@ export default function Screen() {
 
 
                 </ScrollView>
-            </SafeAreaView>
+            </SafeAreaView >
         </>
     );
 }
