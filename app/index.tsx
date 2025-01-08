@@ -29,6 +29,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { ChevronDown } from '~/lib/icons/Chevron-Down';
 import { ArrowDown } from '~/lib/icons/ArrowDown';
 import { ArrowUp } from '~/lib/icons/ArrowUp';
+import { Plus } from '~/lib/icons/Plus';
 
 export default function Screen() {
     const [isBalanceHidden, setIsBalanceHidden] = useState(false);
@@ -120,6 +121,11 @@ export default function Screen() {
 
 
                 </ScrollView>
+                {/* Hovering Icon */}
+                < TouchableOpacity className='z-30 absolute bottom-8 right-8 rounded-full bg-blue-400 dark:bg-white h-[68px] w-[68px] flex items-center justify-center'
+                >
+                    <Plus className='text-white dark:text-black' size={26} />
+                </TouchableOpacity >
             </SafeAreaView >
         </>
     );
