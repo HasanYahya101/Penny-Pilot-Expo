@@ -88,7 +88,7 @@ export default function Screen() {
                     <View className="px-4">
 
                         <View className="flex gap-4 mb-4 flex-row">
-                            <View className="flex-1 bg-[#FF6B6B]/30 rounded-full px-2 py-2">
+                            <TouchableOpacity className="flex-1 bg-[#FF6B6B]/30 rounded-full px-2 py-2">
                                 <View className="flex flex-row items-center gap-5">
                                     <View className="w-14 h-14 rounded-full bg-[#FF6B6B] flex items-center justify-center">
                                         <ArrowDown className="w-4 h-4 text-white" />
@@ -98,8 +98,8 @@ export default function Screen() {
                                         <Text className="text-lg font-semibold truncate">$1,021</Text>
                                     </View >
                                 </View >
-                            </View >
-                            <View className="flex-1 bg-[#4CAF50]/30 rounded-full px-2 py-2">
+                            </TouchableOpacity >
+                            <TouchableOpacity className="flex-1 bg-[#4CAF50]/30 rounded-full px-2 py-2">
                                 <View className="flex flex-row items-center gap-5">
                                     <View className="w-14 h-14 rounded-full bg-[#4CAF50] flex items-center justify-center">
                                         <ArrowUp className="w-4 h-4 text-white" />
@@ -109,7 +109,7 @@ export default function Screen() {
                                         <Text className="text-lg font-semibold truncate">$10,000</Text>
                                     </View >
                                 </View >
-                            </View >
+                            </TouchableOpacity >
                         </View >
                         <View className='flex px-auto items-center justify-center mt-2 px-2'>
                             <View className="inline-block items-center justify-center px-4 py-2 rounded-full bg-gray-800 mx-auto">
