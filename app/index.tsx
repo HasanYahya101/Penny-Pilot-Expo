@@ -118,29 +118,6 @@ export default function Screen() {
                         </View>
                     </View >
 
-                    <View className='mt-6 px-4 flex-1 justify-start items-center'>
-                        <Table>
-                            <TableHeader>
-                                <TableRow className='flex flex-row justify-between'>
-                                    <TableHead className='px-0.5'>
-                                        <Text>Invoice</Text>
-                                    </TableHead>
-                                    <TableHead>
-                                        <Text>Status</Text>
-                                    </TableHead>
-                                    <TableHead>
-                                        <Text>Method</Text>
-                                    </TableHead>
-                                    <TableHead>
-                                        <Text className='text-center md:text-right md:pr-5'>Amount</Text>
-                                    </TableHead>
-                                </TableRow>
-                            </TableHeader>
-                            <TableBody>
-
-                            </TableBody>
-                        </Table>
-                    </View>
 
                 </ScrollView>
                 {/* Hovering Icon */}
