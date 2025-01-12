@@ -30,6 +30,16 @@ import { ChevronDown } from '~/lib/icons/Chevron-Down';
 import { ArrowDown } from '~/lib/icons/ArrowDown';
 import { ArrowUp } from '~/lib/icons/ArrowUp';
 import { Plus } from '~/lib/icons/Plus';
+import {
+    Table,
+    TableBody,
+    TableCell,
+    TableFooter,
+    TableHead,
+    TableHeader,
+    TableRow,
+} from '~/components/ui/table';
+import { FlashList } from '@shopify/flash-list';
 
 export default function Screen() {
     const [isBalanceHidden, setIsBalanceHidden] = useState(false);
@@ -108,7 +118,29 @@ export default function Screen() {
                         </View>
                     </View >
 
+                    <View className='mt-6 px-4 flex-1 justify-start items-center'>
+                        <Table>
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead className='px-0.5'>
+                                        <Text>Invoice</Text>
+                                    </TableHead>
+                                    <TableHead>
+                                        <Text>Status</Text>
+                                    </TableHead>
+                                    <TableHead>
+                                        <Text>Method</Text>
+                                    </TableHead>
+                                    <TableHead>
+                                        <Text className='text-center md:text-right md:pr-5'>Amount</Text>
+                                    </TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
 
+                            </TableBody>
+                        </Table>
+                    </View>
 
                 </ScrollView>
                 {/* Hovering Icon */}
