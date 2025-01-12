@@ -118,6 +118,15 @@ export default function Screen() {
                         </View>
                     </View >
 
+                    <View className='mt-16 px-6 flex flex-row justify-between items-start'>
+                        <View className='flex flex-row gap-1 rounded-lg'>
+                            <Text className="text-xl font-[480] truncate mb-4">Recent Transactions</Text>
+                        </View>
+                        <TouchableOpacity>
+                            <Text className="text-md truncate mb-4 mt-1.5">See all</Text>
+                        </TouchableOpacity>
+                    </View>
+
 
                 </ScrollView>
                 {/* Hovering Icon */}
