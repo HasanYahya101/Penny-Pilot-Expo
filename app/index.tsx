@@ -127,6 +127,21 @@ export default function Screen() {
                         </TouchableOpacity>
                     </View>
 
+                    <View className='px-6 mt-3'>
+                        <ListItem title="Grocery" description="Monthly grocery" amount="- $200" date="12th Aug" type="expense" />
+                        <ListItem title="Salary" description="Monthly salary" amount="+ $10,000" date="12th Aug" type="income" />
+                        <ListItem title="Grocery" description="Monthly grocery" amount="- $200" date="12th Aug" type="expense" />
+                        <ListItem title="Salary" description="Monthly salary" amount="+ $10,000" date="12th Aug" type="income" />
+                        <ListItem title="Grocery" description="Monthly grocery" amount="- $200" date="12th Aug" type="expense" />
+                        <ListItem title="Salary" description="Monthly salary" amount="+ $10,000" date="12th Aug" type="income" />
+                        <ListItem title="Grocery" description="Monthly grocery" amount="- $200" date="12th Aug" type="expense" />
+                        <ListItem title="Salary" description="Monthly salary" amount="+ $10,000" date="12th Aug" type="income" />
+                        <ListItem title="Grocery" description="Monthly grocery" amount="- $200" date="12th Aug" type="expense" />
+                        <ListItem title="Salary" description="Monthly salary" amount="+ $10,000" date="12th Aug" type="income" />
+                        <ListItem title="Grocery" description="Monthly grocery" amount="- $200" date="12th Aug" type="expense" />
+                        <ListItem title="Salary" description="Monthly salary" amount="+ $10,000" date="12th Aug" type="income" />
+                    </View>
+
 
                 </ScrollView>
                 {/* Hovering Icon */}
@@ -136,5 +151,19 @@ export default function Screen() {
                 </TouchableOpacity >
             </SafeAreaView >
         </>
+    );
+}
+
+function ListItem({ title, description, amount, date, type }: { title: string, description: string, amount: string, date: string, type: string }) {
+    return (
+        <View className="flex flex-row items-center gap-4 mb-4 rounded-2xl border-gray-600/30 border p-4 bg-gray-600/30">
+            <View className="w-14 h-14 rounded-full bg-[#FF6B6B]/30 flex items-center justify-center">
+                {type === 'expense' ? <ArrowDown className="w-4 h-4 text-[#FF6B6B]" /> : <ArrowUp className="w-4 h-4 text-[#4CAF50]" />}
+            </View >
+            <View className="flex flex-col">
+                <Text className="text-gray-400 text-md truncate">{title}</Text>
+                <Text className="text-lg font-semibold truncate">{amount}</Text>
+            </View >
+        </View >
     );
 }
