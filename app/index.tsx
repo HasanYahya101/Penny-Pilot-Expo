@@ -121,7 +121,7 @@ export default function Screen() {
                     <View className='mt-6 px-4 flex-1 justify-start items-center'>
                         <Table>
                             <TableHeader>
-                                <TableRow>
+                                <TableRow className='flex flex-row justify-between'>
                                     <TableHead className='px-0.5'>
                                         <Text>Invoice</Text>
                                     </TableHead>
