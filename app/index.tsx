@@ -162,7 +162,7 @@ function ListItem({ title, description, amount, date, type }: { title: string, d
             </View >
             <View className="flex flex-col">
                 <Text className="text-gray-400 text-md truncate">{title}</Text>
-                <Text className="text-lg font-semibold truncate">{amount}</Text>
+                <Text className="text-lg font-semibold truncate text-gray-300">{amount}</Text>
             </View >
         </View >
     );
